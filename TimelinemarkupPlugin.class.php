@@ -30,7 +30,7 @@ class TimelinemarkupPlugin extends StudIPPlugin implements SystemPlugin {
     }
 
     public static function jsonDate($input) {
-        return "new Date(" . date("Y, m, d", strtotime($input)) . ")";
+        return "new Date(" . date("Y, m, d", strtotime($input.' - 1 month')) . ")";
     }
 
 }
